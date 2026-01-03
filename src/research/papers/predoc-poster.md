@@ -18,10 +18,15 @@ abstract: >
 {{ abstract }}
 
 ## Links
-{% if pdf %}- [PDF]({{ pdf }}){% endif %}
-{% if external %}
-- [Supplementary materials]({{ external }})
-{% endif %}
+- [Download PDF]({{ pdf }})
+
+## Poster (embedded)
+
+<iframe
+  src="{{ pdf }}"
+  style="width:100%; height:80vh; border:1px solid #e5e7eb; border-radius:8px;"
+  loading="lazy"
+></iframe>
 
 ## Citation
 Abrams, B., & Hinks, A. (2025). *Food Access and Opportunity*. PREDOC Undergraduate Research Conference.
