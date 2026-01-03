@@ -23,10 +23,18 @@ abstract: >
 ## Poster (embedded)
 
 <iframe
-  src="{{ pdf }}"
-  style="width:100%; height:80vh; border:1px solid #e5e7eb; border-radius:8px;"
+  src="{{ pdf }}#view=FitH"
+  width="100%"
+  height="800"
+  style="border:1px solid #e5e7eb; border-radius:8px;"
   loading="lazy"
-></iframe>
+>
+</iframe>
+
+<p style="margin-top:0.75rem; font-size:0.9rem;">
+  If the embedded PDF does not display,
+  <a href="{{ pdf }}" target="_blank" rel="noopener">open it in a new tab</a>.
+</p>
 
 ## Citation
 Abrams, B., & Hinks, A. (2025). *Food Access and Opportunity*. PREDOC Undergraduate Research Conference.
