@@ -11,3 +11,8 @@ src/_includes/scripts
 
 # secret data
 .env
+
+# macOS junk
+.DS_Store
+**/.DS_Store
+
