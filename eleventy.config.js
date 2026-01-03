@@ -42,6 +42,17 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
+  eleventyConfig.addCollection('papers', collectionApi => {
+    return collectionApi
+      .getFilteredByGlob('src/research/papers/*.md')
+      .filter(item => !item.data.draft)
+      .sort((a, b) => {
+        const ay = a.data.year ?? 0;
+        const by = b.data.year ?? 0;
+        return by - ay;
+      });
+  });
+
 
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
@@ -103,6 +114,8 @@ export default async function (eleventyConfig) {
   ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
+
+  eleventyConfig.addPassthroughCopy('src/assets/papers/');
 
   eleventyConfig.addPassthroughCopy({
     // -- to root
