@@ -1,15 +1,67 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@property --gradient-melt {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
 .gradient-text {
+  --gradient-angle: 0deg;
+  --gradient-melt: 0%;
   color: transparent;
-  background-image: var(--gradient-conic);
+  background-image: conic-gradient(
+    from var(--gradient-angle),
+    var(--color-primary) 0 calc(33% - var(--gradient-melt)),
+    var(--color-secondary) calc(33% + var(--gradient-melt)) calc(66% - var(--gradient-melt)),
+    var(--color-tertiary) calc(66% + var(--gradient-melt)) calc(100% - var(--gradient-melt)),
+    var(--color-primary) 100%
+  );
   padding: 0.6rem 0;
   background-size: 50%;
+  background-position: 0% 50%;
+  background-repeat: repeat;
   background-clip: text;
+  transition: filter 400ms ease;
+}
+
+.gradient-text:hover {
+  --gradient-melt: 14%;
+  transition: filter 400ms ease, --gradient-melt 5s ease;
+  animation: gradient-spin 8s linear infinite;
+}
+
+@keyframes gradient-spin {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  18% {
+    --gradient-angle: -30deg;
+  }
+  46% {
+    --gradient-angle: -170deg;
+  }
+  72% {
+    --gradient-angle: -300deg;
+  }
+  86% {
+    --gradient-angle: -335deg;
+  }
+  100% {
+    --gradient-angle: -360deg;
+  }
 }
 
 .gradient-text-linear {
   color: transparent;
   background-image: var(--gradient-rainbow);
   background-size: 100%;
+  background-position: 0% 50%;
   background-repeat: repeat;
   background-clip: text;
+  transition: filter 400ms ease;
 }
