@@ -1,8 +1,17 @@
 export default {
   top: [
+    { text: 'Home', url: '/' },
+    {
+      text: 'Projects',
+      url: '/projects/',
+      submenu: [
+        { text: 'Selected Works', url: '/projects/' },
+        { text: 'Course Projects', url: '/projects/course-projects/' },
+        { text: 'Tools', url: '/projects/tools/' },
+        { text: 'Writing', url: '/projects/writing/' }
+      ]
+    },
     { text: 'Research', url: '/research/' },
-    { text: 'Projects', url: '/projects/' },
-    { text: 'Aesthetics', url: '/aesthetics/' },
     { text: 'About', url: '/about/' }
   ],
   bottom: [

@@ -1,18 +1,28 @@
 ---
-title: Placeholder Title
+title: "Dancing with the Devil: Elite Signaling and Behavioral Interventions for U.S. Climate Policy"
 layout: page
 type: Paper
 authors:
-  - Placeholder Author
+  - Benjamin Abrams
 year: 2024
-venue: Placeholder Venue
+venue: Intervention Design Project (Fall 2024)
 pdf: /assets/papers/Intervention-Design-Project-Final-Benjamin-Abrams.pdf
-abstract: >
-  Placeholder abstract.
+abstract:
+  - "Without an elite-driven public opinion movement within the next five years, we will likely never see appropriate, peer-reviewed, scientist-backed federal emission reductions in the US."
+  - "Oil companies are the behavior interventionists that we are 'up against'."
+  - "If behavioral insight can be used to delay climate action, it can also be used to force it."
 ---
 
 ## Abstract
+<blockquote class="paper-abstract">
+{% if abstract is string %}
 {{ abstract }}
+{% else %}
+{% for quote in abstract %}
+<p>"{{ quote }}"</p>
+{% endfor %}
+{% endif %}
+</blockquote>
 
 ## Links
 - [Download PDF]({{ pdf }})
@@ -34,4 +44,4 @@ abstract: >
 </p>
 
 ## Citation
-Placeholder citation.
+Abrams, Benjamin. "Dancing with the Devil: Elite Signaling and Behavioral Interventions for U.S. Climate Policy." Intervention Design Project (Fall 2024).

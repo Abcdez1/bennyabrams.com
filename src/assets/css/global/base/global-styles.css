@@ -54,6 +54,11 @@ blockquote {
   font-size: var(--size-step-2);
 }
 
+blockquote.paper-abstract {
+  padding: var(--space-s-m);
+  font-size: var(--size-step-0);
+}
+
 blockquote > * + * {
   margin-block-start: var(--space-m-l);
 }
@@ -62,6 +67,10 @@ blockquote :last-child {
   font-family: var(--font-base);
   font-style: normal;
   font-size: var(--size-step-1);
+}
+
+blockquote.paper-abstract :last-child {
+  font-size: inherit;
 }
 
 input,

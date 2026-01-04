@@ -1,18 +1,28 @@
 ---
-title: Placeholder Title
+title: "The Kyoto Protocol: Governance, Negotiation, and the Evolution of International Climate Law"
 layout: page
 type: Paper
 authors:
-  - Placeholder Author
+  - Benjamin Abrams
 year: 2024
-venue: Placeholder Venue
+venue: International Environmental Law - Final Paper (Spring 2024)
 pdf: /assets/papers/Abrams-Benjamin-Kyoto-Story.pdf
-abstract: >
-  Placeholder abstract.
+abstract:
+  - "Although its second commitment period came to an end on 31 December 2020, and it has, to all practical intents and purposes, now expired, the Kyoto Protocol remains a key milestone in the evolutionary development of the international climate change regime."
+  - "Eventual agreement and entry into force were arguably only possible based on the broad political agreements reached in Kyoto."
+  - "The Kyoto Protocol's limitations, therefore, stemmed not only from the withdrawal of a key party but also from the collective unwillingness and inconsideration of negotiating to build a truly global coalition."
 ---
 
 ## Abstract
+<blockquote class="paper-abstract">
+{% if abstract is string %}
 {{ abstract }}
+{% else %}
+{% for quote in abstract %}
+<p>"{{ quote }}"</p>
+{% endfor %}
+{% endif %}
+</blockquote>
 
 ## Links
 - [Download PDF]({{ pdf }})
@@ -34,4 +44,4 @@ abstract: >
 </p>
 
 ## Citation
-Placeholder citation.
+Abrams, Benjamin. "The Kyoto Protocol: Governance, Negotiation, and the Evolution of International Climate Law." International Environmental Law - Final Paper (Spring 2024).
