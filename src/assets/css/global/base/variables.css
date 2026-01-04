@@ -72,3 +72,104 @@
   --color-bg-accent: var(--color-gray-700);
   --color-bg-accent-2: var(--color-gray-600);
 }
+/* ============================================================
+   DATA-COLOR-THEME OVERRIDES (MUST BE LAST IN FILE)
+   Adds NEW colors only; does NOT redefine existing ones above.
+   Usage: <html data-color-theme="academic">
+   Values: academic | greens | earthy | mono | pink
+   ============================================================ */
+
+/* ---------- New colors (hex) ---------- */
+:root {
+  /* Academic */
+  --color-academic-blue: #1f3a5f;
+  --color-academic-blue-subdued: #9fb4cc;
+
+  /* Greens */
+  --color-forest-green: #2f6f4e;
+  --color-forest-green-subdued: #9bbfb0;
+
+  /* Earthy */
+  --color-earth-brown: #6b4e3d;
+  --color-earth-brown-subdued: #b9a89c;
+
+  /* Mono */
+  --color-mono-primary: #3f3f3f;
+  --color-mono-secondary: #7a7a7a;
+  --color-mono-tertiary: #a8a8a8;
+}
+
+/* ---------- ACADEMIC ---------- */
+:root[data-color-theme='academic'] {
+  --color-primary: var(--color-academic-blue);
+  --color-secondary: var(--color-gold);
+  --color-tertiary: var(--color-gray-500);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='academic'] {
+    --color-primary: var(--color-academic-blue-subdued);
+    --color-secondary: var(--color-gold-subdued);
+    --color-tertiary: var(--color-gray-600);
+  }
+}
+
+/* ---------- GREENS ---------- */
+:root[data-color-theme='greens'] {
+  --color-primary: var(--color-forest-green);
+  --color-secondary: var(--color-blue);
+  --color-tertiary: var(--color-gold);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='greens'] {
+    --color-primary: var(--color-forest-green-subdued);
+    --color-secondary: var(--color-blue-subdued);
+    --color-tertiary: var(--color-gold-subdued);
+  }
+}
+
+/* ---------- EARTHY ---------- */
+:root[data-color-theme='earthy'] {
+  --color-primary: var(--color-earth-brown);
+  --color-secondary: var(--color-gold);
+  --color-tertiary: var(--color-forest-green);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='earthy'] {
+    --color-primary: var(--color-earth-brown-subdued);
+    --color-secondary: var(--color-gold-subdued);
+    --color-tertiary: var(--color-forest-green-subdued);
+  }
+}
+
+/* ---------- MONO ---------- */
+:root[data-color-theme='mono'] {
+  --color-primary: var(--color-mono-primary);
+  --color-secondary: var(--color-mono-secondary);
+  --color-tertiary: var(--color-mono-tertiary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='mono'] {
+    --color-primary: var(--color-gray-300);
+    --color-secondary: var(--color-gray-400);
+    --color-tertiary: var(--color-gray-500);
+  }
+}
+
+/* ---------- PINK (original vibe, but opt-in) ---------- */
+:root[data-color-theme='pink'] {
+  --color-primary: var(--color-pink);
+  --color-secondary: var(--color-blue);
+  --color-tertiary: var(--color-gold);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='pink'] {
+    --color-primary: var(--color-pink-subdued);
+    --color-secondary: var(--color-blue-subdued);
+    --color-tertiary: var(--color-gold-subdued);
+  }
+}
