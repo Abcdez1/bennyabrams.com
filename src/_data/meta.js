@@ -10,7 +10,7 @@ export const lang = 'en';
 
 export const author = {
   name: 'Ben Abrams',
-  avatar: '/assets/images/favicon/favicon-32x32.png',
+  avatar: '/assets/images/favicon/icon-512x512.png',
   email: '',
   website: 'https://bennyabrams.com',
   fediverse: ''
