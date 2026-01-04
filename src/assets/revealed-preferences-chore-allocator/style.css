@@ -1,0 +1,99 @@
+.chore-allocator {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: #f9f9f9;
+}
+
+.chore-allocator h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.chore-allocator .task-row {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chore-allocator .task-row label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.chore-allocator .task-row input {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.chore-allocator button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.chore-allocator button:hover {
+  background: #0056b3;
+}
+
+.chore-allocator #error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.chore-allocator #result {
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chore-allocator #result ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.chore-allocator #result li {
+  padding: 4px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .chore-allocator {
+    background: #2b2b2b;
+    color: #ffffff;
+  }
+
+  .chore-allocator .task-row,
+  .chore-allocator #result {
+    background: #3a3a3a;
+    color: #ffffff;
+    box-shadow: none;
+  }
+
+  .chore-allocator .task-row input {
+    background: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #555;
+  }
+
+  .chore-allocator button {
+    background: #555;
+    color: #ffffff;
+  }
+
+  .chore-allocator button:hover {
+    background: #666;
+  }
+}
