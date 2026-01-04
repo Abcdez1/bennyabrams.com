@@ -22,22 +22,16 @@
       </nav>
 
       <nav class="cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
-        <!-- gets the first item from the feed loop set in meta -->
-        <a
-          href="{{ meta.blog.feedLinks[0].url }}"
-          rel="alternate"
-          type="{{ meta.blog.feedLinks[0].type }}"
-          class="button"
-          data-icon
-        >
-          <span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
-          {% svg "misc/rss" %}
-        </a>
-
         {% for key, value in personal.platforms %}
           {% if value != "" %}
             <!-- regular platforms -->
-            <a class="no-indicator button" data-icon href="{{ value }}" rel="me">
+            <a
+              class="no-indicator button"
+              data-icon
+              href="{{ value }}"
+              rel="me noopener noreferrer"
+              target="_blank"
+            >
               <span class="visually-hidden">{{ key | capitalize }}</span>
               {% svg 'platform/' + key %}
             </a>
@@ -48,14 +42,11 @@
 
     {% include 'partials/theme-switch.njk' %}
 
-    <aside class="creator | cluster gutter-2xs text-step-min-1 mt-xl">
-      Made with <span class="visually-hidden">love</span> <span>{% svg "misc/heart" %}</span> and
-      <a class="no-indicator" href="https://www.11ty.dev/">
-        <span class="visually-hidden">Eleventy</span>
-        {% svg "misc/11ty" %}
-      </a>
-      by
-      <a href="{{ meta.creator.website }}">{{ meta.creator.name }}</a>
+    <aside class="creator | cluster gutter-2xs text-step-min-2 mt-xl">
+      Built with
+      <a class="no-indicator" href="https://www.11ty.dev/">Eleventy</a>
+      · Theme adapted from Eleventy Excellent by
+      <a class="no-indicator" href="https://www.lenesaile.com/">Lene Saile</a>.
     </aside>
   </div>
 </footer>
