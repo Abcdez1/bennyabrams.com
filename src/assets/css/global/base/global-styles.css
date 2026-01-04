@@ -59,6 +59,10 @@ blockquote.paper-abstract {
   font-size: var(--size-step-0);
 }
 
+blockquote.paper-abstract.writing-abstract {
+  font-size: var(--size-step-min-1);
+}
+
 blockquote > * + * {
   margin-block-start: var(--space-m-l);
 }

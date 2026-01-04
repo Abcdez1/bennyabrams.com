@@ -62,6 +62,16 @@ export default async function (eleventyConfig) {
         return by - ay;
       });
   });
+  eleventyConfig.addCollection('writingPapers', collectionApi => {
+    return collectionApi
+      .getFilteredByGlob('src/projects/writing/papers/*.md')
+      .filter(item => !item.data.draft)
+      .sort((a, b) => {
+        const ay = a.data.year ?? 0;
+        const by = b.data.year ?? 0;
+        return by - ay;
+      });
+  });
 
 
   // ---------------------  Plugins
