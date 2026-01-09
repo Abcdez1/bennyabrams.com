@@ -1,0 +1,61 @@
+.work-links {
+  --work-link-base: var(--spot-color, var(--color-primary));
+  --work-link-text: var(--color-light);
+  --work-link-border: color-mix(in oklab, var(--work-link-base) 70%, var(--work-link-text));
+  --work-link-active-bg: color-mix(in oklab, var(--work-link-base) 55%, var(--work-link-text));
+  --work-link-gradient: linear-gradient(
+    110deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-tertiary)
+  );
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.work-link {
+  --focus-color: var(--work-link-text);
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--work-link-border);
+  border-radius: var(--border-radius-medium);
+  color: var(--work-link-text);
+  display: inline-flex;
+  gap: var(--space-2xs);
+  overflow: hidden;
+  padding: var(--space-2xs) var(--space-s);
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+  transition:
+    background-color var(--transition-duration) var(--transition-timing),
+    border-color var(--transition-duration) var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing);
+}
+
+.work-link::before {
+  background-image: var(--work-link-gradient);
+  border-radius: inherit;
+  content: '';
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(100%);
+  transition: transform 400ms var(--transition-timing);
+  z-index: -1;
+}
+
+.work-link:hover::before {
+  transform: translateX(0);
+}
+
+.work-link:active,
+.work-link:focus,
+.work-link:focus-visible {
+  background-color: var(--work-link-active-bg);
+  border-color: var(--work-link-active-bg);
+}
