@@ -1,11 +1,19 @@
 import Image from '@11ty/eleventy-img';
 import path from 'node:path';
 
+const escapeAttributeValue = value => {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+};
+
 const stringifyAttributes = attributeMap => {
   return Object.entries(attributeMap)
     .map(([attribute, value]) => {
       if (typeof value === 'undefined') return '';
-      return `${attribute}="${value}"`;
+      return `${attribute}="${escapeAttributeValue(value)}"`;
     })
     .join(' ');
 };

@@ -7,7 +7,7 @@ gallery:
     alt: 'Banner for Rutgers Sustainability Coalition communications'
     caption: 'SusCo banner'
   - image: ./src/assets/images/design-communications/who-is-susco.jpg
-    alt: '"Who is SusCo?" informational graphic for Rutgers Sustainability Coalition'
+    alt: 'Who is SusCo? informational graphic for Rutgers Sustainability Coalition'
     caption: 'Who is SusCo?'
 ---
 
