@@ -8,6 +8,7 @@ export default {
         { text: 'Selected Works', url: '/projects/' },
         { text: 'Course Projects', url: '/projects/course-projects/' },
         { text: 'Tools', url: '/projects/tools/' },
+        { text: 'Design & Communications', url: '/projects/design-communications/' },
         { text: 'Writing', url: '/projects/writing/' }
       ]
     },
