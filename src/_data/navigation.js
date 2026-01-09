@@ -13,6 +13,7 @@ export default {
       ]
     },
     { text: 'Research', url: '/research/' },
+    { text: 'Aesthetics', url: '/aesthetics/' },
     { text: 'About', url: '/about/' }
   ],
   bottom: [
