@@ -37,6 +37,7 @@
 .prose :is(p, li, dl, blockquote) {
   max-inline-size: 60ch;
   text-wrap: pretty;
+  font-family: var(--font-longform);
 }
 
 .prose .heading-anchor:where(:hover, :focus) {

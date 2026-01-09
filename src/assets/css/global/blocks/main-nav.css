@@ -88,7 +88,7 @@ body:has([data-drawer-toggle][aria-expanded='true']) {
 .mainnav span {
   font-weight: var(--font-bold);
   text-transform: uppercase;
-  font-family: var(--font-display);
+  font-family: var(--font-link);
   font-size: var(--size-step-min-1);
 }
 
@@ -113,6 +113,8 @@ body:has([data-drawer-toggle][aria-expanded='true']) {
 
   background: var(--nav-item-background);
   color: var(--nav-item-text-color);
+  font-family: var(--font-link);
+  font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
   padding: var(--nav-item-padding);
   display: block;
@@ -121,10 +123,6 @@ body:has([data-drawer-toggle][aria-expanded='true']) {
   text-decoration-color: var(--nav-item-decoration-color);
   text-decoration-thickness: 3px;
   text-underline-offset: 0.2em;
-}
-
-.mainnav:has(.nav-sublist) :is(a, [data-submenu-toggle]) {
-  font-weight: var(--nav-item-font-weight);
 }
 
 .mainnav [data-submenu-toggle] {
@@ -184,7 +182,7 @@ li:has(ul a[aria-current='page']) > [data-submenu-toggle] {
 }
 
 .mainnav .nav-sublist a {
-  --nav-item-font-weight: var(--font-regular);
+  --nav-item-font-weight: var(--font-bold);
 }
 
 @media screen(navigation) {
@@ -194,7 +192,7 @@ li:has(ul a[aria-current='page']) > [data-submenu-toggle] {
   }
 
   .mainnav :is(a, [data-submenu-toggle]) {
-    --nav-item-font-weight: var(--font-regular);
+    --nav-item-font-weight: var(--font-bold);
   }
 
   .mainnav ul {

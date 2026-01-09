@@ -27,11 +27,15 @@ main {
   flex: auto;
 }
 
+main :is(p, li, dl, blockquote) {
+  font-family: var(--font-longform);
+}
+
 h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-weight: var(--font-extra-bold);
+  font-weight: var(--font-bold);
   line-height: var(--leading-fine);
   letter-spacing: var(--tracking-s);
 }
@@ -56,6 +60,7 @@ blockquote {
 
 blockquote.paper-abstract {
   padding: var(--space-s-m);
+  font-family: var(--font-longform);
   font-size: var(--size-step-0);
 }
 
@@ -74,6 +79,7 @@ blockquote :last-child {
 }
 
 blockquote.paper-abstract :last-child {
+  font-family: var(--font-longform);
   font-size: inherit;
 }
 
@@ -123,10 +129,17 @@ figcaption:after {
 a {
   text-decoration-thickness: 0.15ex;
   text-underline-offset: 0.2ch;
+  font-family: var(--font-link);
+  font-weight: var(--font-medium);
 }
 
 a:not([class]):hover {
   text-decoration: none;
+}
+
+:where(h1, h2, h3, h4, h5, h6) a {
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 :focus {

@@ -51,6 +51,10 @@ custom-card > p {
   grid-row: desc;
 }
 
+custom-card > :is(p, div)[slot='content'] {
+  font-family: var(--font-longform);
+}
+
 custom-card > footer {
   grid-row: footer;
   font-size: var(--size-step-min-2);
