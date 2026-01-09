@@ -173,3 +173,131 @@
     --color-tertiary: var(--color-gold-subdued);
   }
 }
+/* ============================================================
+   VINTAGE WPA / MAP / ARCHIVE COLOR THEMES
+   Opt-in via: <html data-color-theme="wpa | nps | topo | atlas | parchment | rail">
+   ============================================================ */
+
+/* ---------- New colors (hex) ---------- */
+:root {
+  /* WPA / NPS inks */
+  --color-wpa-rust: #b24a2f;
+  --color-wpa-rust-subdued: #d7a497;
+
+  --color-wpa-teal: #2f6f73;
+  --color-wpa-teal-subdued: #9bbfc1;
+
+  --color-wpa-sun: #e1b34a;
+  --color-wpa-sun-subdued: #e9d6a6;
+
+  /* Vintage map tones */
+  --color-map-ink: #2b2b2b;
+  --color-map-sea: #7fa6b8;
+  --color-map-sea-subdued: #b8ceda;
+
+  --color-map-land: #c7b58a;
+  --color-map-land-subdued: #e0d6b8;
+
+  --color-map-forest: #4f6f52;
+  --color-map-forest-subdued: #a9bfa8;
+
+  /* Paper / lithography */
+  --color-parchment: #efe6cf;
+  --color-parchment-dark: #d8cfb8;
+
+  --color-litho-red: #9e2f2f;
+  --color-litho-blue: #2e4a6f;
+  --color-litho-green: #3f5f4a;
+
+  /* Survey / railroad */
+  --color-rail-navy: #24324a;
+  --color-rail-navy-subdued: #9aa7bd;
+
+  --color-rail-oxide: #8c4a32;
+  --color-rail-oxide-subdued: #c8a295;
+}
+
+/* ---------- WPA CLASSIC ---------- */
+:root[data-color-theme='wpa'] {
+  --color-primary: var(--color-wpa-teal);
+  --color-secondary: var(--color-wpa-sun);
+  --color-tertiary: var(--color-wpa-rust);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='wpa'] {
+    --color-primary: var(--color-wpa-teal-subdued);
+    --color-secondary: var(--color-wpa-sun-subdued);
+    --color-tertiary: var(--color-wpa-rust-subdued);
+  }
+}
+
+/* ---------- NATIONAL PARKS ---------- */
+:root[data-color-theme='nps'] {
+  --color-primary: var(--color-map-forest);
+  --color-secondary: var(--color-map-sea);
+  --color-tertiary: var(--color-wpa-sun);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='nps'] {
+    --color-primary: var(--color-map-forest-subdued);
+    --color-secondary: var(--color-map-sea-subdued);
+    --color-tertiary: var(--color-wpa-sun-subdued);
+  }
+}
+
+/* ---------- TOPOGRAPHIC MAP ---------- */
+:root[data-color-theme='topo'] {
+  --color-primary: var(--color-map-ink);
+  --color-secondary: var(--color-map-land);
+  --color-tertiary: var(--color-map-forest);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='topo'] {
+    --color-primary: var(--color-gray-300);
+    --color-secondary: var(--color-map-land-subdued);
+    --color-tertiary: var(--color-map-forest-subdued);
+  }
+}
+
+/* ---------- VINTAGE ATLAS ---------- */
+:root[data-color-theme='atlas'] {
+  --color-primary: var(--color-map-sea);
+  --color-secondary: var(--color-map-land);
+  --color-tertiary: var(--color-wpa-rust);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='atlas'] {
+    --color-primary: var(--color-map-sea-subdued);
+    --color-secondary: var(--color-map-land-subdued);
+    --color-tertiary: var(--color-wpa-rust-subdued);
+  }
+}
+
+/* ---------- PARCHMENT / ARCHIVE ---------- */
+:root[data-color-theme='parchment'] {
+  --color-bg: var(--color-parchment);
+  --color-bg-accent: var(--color-parchment-dark);
+
+  --color-primary: var(--color-litho-blue);
+  --color-secondary: var(--color-litho-red);
+  --color-tertiary: var(--color-litho-green);
+}
+
+/* ---------- RAILROAD / SURVEY ---------- */
+:root[data-color-theme='rail'] {
+  --color-primary: var(--color-rail-navy);
+  --color-secondary: var(--color-rail-oxide);
+  --color-tertiary: var(--color-map-land);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-color-theme='rail'] {
+    --color-primary: var(--color-rail-navy-subdued);
+    --color-secondary: var(--color-rail-oxide-subdued);
+    --color-tertiary: var(--color-map-land-subdued);
+  }
+}

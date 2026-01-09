@@ -4,13 +4,23 @@
   "items": [
     {
       "name": "Display",
-      "description": "Display font stack for headings and large text. Redhat Display is made for headlines and big statements, are low contrast and spaced tightly, with a large x-height and open counters.",
-      "value": ["Redhat", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "description": "Display font stack for headings and large text.",
+      "value": ["helvetica-neue-world", "sans-serif"]
     },
     {
       "name": "Base",
-      "description": "Base font stack for body text. Atkinson Hyperlegible, named after the founder of the Braille Institute, has been developed specifically to increase legibility for readers with low vision, and to improve comprehension.",
-      "value": ["Atkinson Hyperlegible", "system-ui", "sans-serif"]
+      "description": "Base font stack for UI and general copy.",
+      "value": ["helvetica-neue-world", "sans-serif"]
+    },
+    {
+      "name": "Link",
+      "description": "Link and navigation font stack.",
+      "value": ["neue-frutiger-world", "sans-serif"]
+    },
+    {
+      "name": "Longform",
+      "description": "Long-form text stack for abstracts and descriptions.",
+      "value": ["itc-slimbach", "sans-serif"]
     },
     {
       "name": "Mono",
