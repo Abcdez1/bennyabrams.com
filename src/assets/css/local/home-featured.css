@@ -106,3 +106,50 @@
 .featured-work__meta:empty {
   display: none;
 }
+
+.twix-dvd-button {
+  --twix-size: clamp(72px, 12vw, 140px);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: var(--twix-size);
+  left: 2vw;
+  padding: 0;
+  position: fixed;
+  top: 2vh;
+  width: var(--twix-size);
+  z-index: 1001;
+  animation:
+    twix-dvd-x 18s linear infinite alternate,
+    twix-dvd-y 14s linear infinite alternate;
+}
+
+.twix-dvd-button img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes twix-dvd-x {
+  from {
+    left: 2vw;
+  }
+  to {
+    left: calc(100vw - var(--twix-size) - 2vw);
+  }
+}
+
+@keyframes twix-dvd-y {
+  from {
+    top: 2vh;
+  }
+  to {
+    top: calc(100vh - var(--twix-size) - 2vh);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .twix-dvd-button {
+    animation: none;
+  }
+}
