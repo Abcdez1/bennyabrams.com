@@ -37,13 +37,87 @@ description: 'my work.'
   </header>
 
   <article class="full | region">
-    <div class="prose wrapper flow">
-      <h2>Featured</h2>
-      <ul>
-        <li><a href="/research/">Food Access & Opportunity (Predoc poster)</a></li>
-        <li><a href="/projects/">JS demos + tooling</a></li>
-        <li><a href="/aesthetics/">Posters, maps, architecture (20th century)</a></li>
-      </ul>
+    <div class="prose wrapper flow featured-sections">
+      <section class="featured-section flow">
+        <h2>Featured Research</h2>
+        <article class="featured-card flow">
+          <h3 class="featured-card__title">
+            <a href="https://bennyabrams.com/research/papers/predoc-poster/">
+              Food Access and Opportunity: How Food Deserts Shape Economic Mobility
+            </a>
+          </h3>
+          <p class="featured-card__hook">
+            “An empirical study of food access and upward mobility showing that widely used “food desert” definitions
+            produce sharply different—and often counterintuitive—patterns across states and between urban and rural
+            areas.”
+          </p>
+        </article>
+
+        <div class="featured-screenshots flow">
+          <p class="featured-screenshots__label">Selected screenshots</p>
+          <div class="featured-screenshots__grid grid">
+            <figure class="featured-screenshot">
+              <div class="featured-screenshot__image" role="img" aria-label="Screenshot placeholder"></div>
+              <figcaption class="featured-screenshot__caption"></figcaption>
+            </figure>
+            <figure class="featured-screenshot">
+              <div class="featured-screenshot__image" role="img" aria-label="Screenshot placeholder"></div>
+              <figcaption class="featured-screenshot__caption"></figcaption>
+            </figure>
+            <figure class="featured-screenshot">
+              <div class="featured-screenshot__image" role="img" aria-label="Screenshot placeholder"></div>
+              <figcaption class="featured-screenshot__caption"></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-section flow">
+        <h2>Featured Work</h2>
+        <div class="featured-work">
+          <article class="featured-card flow">
+            <h3 class="featured-card__title">
+              <a href="/projects/papers/kyoto-story/">
+                The Kyoto Protocol: Governance, Negotiation, and the Evolution of International Climate Law
+              </a>
+            </h3>
+            <p class="featured-work__meta"></p>
+            <p class="featured-card__hook">
+              “A legal and institutional account of the Kyoto Protocol that distinguishes between binding texts and the
+              political, organizational, and interpretive frameworks that shaped their negotiation and implementation.”
+            </p>
+          </article>
+          <article class="featured-card flow">
+            <h3 class="featured-card__title">
+              <a href="/projects/papers/intervention-design-project-final/">
+                Dancing with the Devil: Elite Signaling and Behavioral Interventions for U.S. Climate Policy
+              </a>
+            </h3>
+            <p class="featured-work__meta"></p>
+            <p class="featured-card__hook">
+              “A critical examination of behavioral climate interventions, arguing that individual-focused solutions
+              often obscure power, political economy, and the role of elite signaling in enabling systemic change.”
+            </p>
+          </article>
+          <article class="featured-card flow">
+            <h3 class="featured-card__title">
+              <a href="/projects/writing/papers/recons-brutalism-and-infrastructure/">
+                Brutalism, Infrastructure, and the Economics of Heat
+              </a>
+            </h3>
+            <p class="featured-work__meta"></p>
+            <p class="featured-card__hook">
+              “A reflective analysis of Rutgers’ Brutalist infrastructure that uses overheating dorms to examine climate
+              adaptation, intergenerational investment, and how economic priorities are embedded in the built
+              environment.”
+            </p>
+          </article>
+        </div>
+      </section>
     </div>
   </article>
 </div>
+
+{% css "local" %}
+  {% include "css/home-featured.css" %}
+{% endcss %}
