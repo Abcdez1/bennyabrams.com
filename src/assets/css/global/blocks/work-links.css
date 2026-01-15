@@ -17,6 +17,10 @@
   padding: 0;
 }
 
+.work-links--spaced {
+  margin-top: var(--space-s);
+}
+
 .work-link {
   --focus-color: var(--work-link-text);
   align-items: center;
