@@ -16,6 +16,9 @@ abstract: >
 
 ## Abstract
 {{ abstract }}
+<p class="abstract-note">
+  <span>Note: This project was co-authored; all figures, screenshots, and visualizations shown here were produced as part of my contribution to the project.</span>
+</p>
 
 ## Links
 - [Download PDF]({{ pdf }})

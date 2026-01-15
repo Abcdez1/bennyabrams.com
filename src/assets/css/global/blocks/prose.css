@@ -34,6 +34,10 @@
   --flow-space: var(--space-l);
 }
 
+.prose hr + * {
+  --flow-space: var(--space-s);
+}
+
 .prose :is(p, li, dl, blockquote) {
   max-inline-size: 60ch;
   text-wrap: pretty;
@@ -79,6 +83,10 @@
 
 .prose img {
   border-radius: var(--border-radius-medium);
+}
+
+.prose .abstract-note span {
+  font-size: 0.9rem;
 }
 
 @media screen(ltsm) {
