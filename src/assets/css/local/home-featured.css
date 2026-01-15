@@ -3,6 +3,10 @@
 }
 
 .featured-section {
+  --flow-space: var(--space-m);
+}
+
+.featured-section:first-of-type > h2 + * {
   --flow-space: var(--space-m-l);
 }
 
@@ -11,7 +15,7 @@
   border: var(--stroke);
   border-color: var(--color-bg-accent-2);
   border-radius: var(--border-radius-medium);
-  padding: var(--space-s-m);
+  padding: var(--space-s);
   background-color: var(--color-bg-accent);
 }
 
@@ -19,12 +23,18 @@
   font-size: var(--size-step-2);
   line-height: var(--leading-fine);
   margin: 0;
-  margin-block-end: var(--space-xs);
+  margin-block-end: var(--space-s);
+  width: 100%;
+  max-inline-size: none;
+  text-wrap: wrap;
+  overflow-wrap: normal;
+  hyphens: manual;
 }
 
 .featured-card__title a {
   color: var(--color-primary);
   text-decoration-thickness: 0.15ex;
+  text-wrap: wrap;
 }
 
 .featured-card__hook {

@@ -14,7 +14,7 @@ Selected posters, papers, and work in progress. Each entry has a short abstract 
 {% if p.data.venue %}{{ p.data.venue }}{% endif %}{% if p.data.year %} ({{ p.data.year }}){% endif %}
 
 {% if p.data.abstract %}{{ p.data.abstract }}{% endif %}
-4
+
 {% if p.data.pdf %}
 - [PDF]({{ p.data.pdf }})
 {% endif %}
