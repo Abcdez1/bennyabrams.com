@@ -59,10 +59,11 @@
 }
 
 .featured-screenshot__image {
-  aspect-ratio: 16 / 9;
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: var(--border-radius-small);
   border: var(--stroke);
-  background: linear-gradient(135deg, var(--color-bg-accent), var(--color-bg));
 }
 
 .featured-screenshot__caption {
