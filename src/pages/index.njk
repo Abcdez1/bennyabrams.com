@@ -10,31 +10,41 @@ description: 'my work.'
     <img src="/assets/images/home/twix-button.png" alt="" aria-hidden="true" />
   </a>
   <header class="full | section" style="--spot-color: var(--color-primary)">
-    <div class="section__inner flow region">
-      <h1 class="text-center" style="color: var(--color-light); font-style: italic;">{{ title }}</h1>
-      <p class="text-center" style="color: var(--color-light); max-width: 65ch; margin-inline: auto;">
-        {{ description }}
-      </p>
-      <ul class="work-links" role="list">
-        <li>
+    <div class="section__inner region">
+      <div class="home-hero">
+        <div class="home-hero__content flow">
+          <h1 style="color: var(--color-light); font-style: italic;">{{ title }}</h1>
+          <p style="color: var(--color-light); max-width: 65ch;">
+            {{ description }}
+          </p>
+          <ul class="work-links work-links--home" role="list">
+            <li>
+              <a
+                class="work-link"
+                href="https://www.linkedin.com/in/benjamin-abrams-ru"
+                target="_blank"
+                rel="noopener noreferrer"
+              >LinkedIn</a>
+            </li>
+            <li>
+              <a
+                class="work-link"
+                href="https://github.com/Abcdez1/bennyabrams.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >GitHub repo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="home-hero__art">
           <a
-            class="work-link"
-            href="https://www.linkedin.com/in/benjamin-abrams-ru"
-            target="_blank"
-            rel="noopener noreferrer"
-          >LinkedIn</a>
-        </li>
-        <li>
-          <a
-            class="work-link"
-            href="https://github.com/Abcdez1/bennyabrams.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >GitHub repo</a>
-        </li>
-      </ul>
-
-
+            class="home-hero__footnote-link"
+            href="#feynman-cover-footnote"
+            aria-label="Cover art credit"
+          >*</a>
+          <img src="/assets/images/home/feynman-cover-art.png" alt="Feynman cover art" />
+        </div>
+      </div>
     </div>
     {% svg "divider/waves", null, "divider" %}
   </header>
@@ -166,6 +176,17 @@ description: 'my work.'
       </section>
     </div>
   </article>
+  <footer class="full | region home-footnote">
+    <div class="prose wrapper">
+      <p id="feynman-cover-footnote" class="home-footnote__text">
+        <a
+          href="https://mitpress.mit.edu/celebrating-60-years-of-the-mit-press-our-favorite-book-covers-from-the-60s/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >From the cover of The Character of Physical Law by Richard Feynman (1967)</a>
+      </p>
+    </div>
+  </footer>
 </div>
 
 {% css "local" %}
