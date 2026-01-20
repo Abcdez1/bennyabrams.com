@@ -301,3 +301,33 @@
     --color-tertiary: var(--color-map-land-subdued);
   }
 }
+
+/* ---------- PAPER BLACK ---------- */
+:root[data-color-theme='paper-black'] {
+  --color-primary: #111111; /* warm paper black */
+  --color-secondary: #b8b4aa; /* architectural gray */
+  --color-tertiary: #e36a9b; /* dusty academic pink */
+}
+
+/* ---------- NAVY CREAM ---------- */
+:root[data-color-theme='navy-cream'] {
+  --color-primary: #0e1620; /* deep ink */
+  --color-secondary: #efebdd; /* cream / ecru */
+  --color-tertiary: #6e9fb8; /* soft systems blue */
+}
+
+/* ---------- NAVY PINK ---------- */
+:root[data-color-theme='navy-pink'] {
+  --color-primary: #0f1a24; /* deep ink blue */
+  --color-secondary: #aeb7be; /* stone blue-gray */
+  --color-tertiary: #e36a9b; /* dusty academic pink */
+}
+
+/* ---------- CREAM BLUE PINK ---------- */
+:root[data-color-theme='grey-blue'] {
+  --color-primary: #d8d1bf; /* dark parchment / buff */
+  --color-secondary: #67ADF0; /* soft systems blue */
+  --color-tertiary: #9da08f; /* academic grey */
+  --color-text: #faf9f6; /* soft white for this theme */
+  --work-link-gradient: linear-gradient(110deg, #67ADF0, #9da08f, #434343);
+}
