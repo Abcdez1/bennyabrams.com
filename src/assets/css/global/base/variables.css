@@ -328,6 +328,11 @@
   --color-primary: #d8d1bf; /* dark parchment / buff */
   --color-secondary: #67ADF0; /* soft systems blue */
   --color-tertiary: #9da08f; /* academic grey */
-  --color-text: #faf9f6; /* soft white for this theme */
   --work-link-gradient: linear-gradient(110deg, #67ADF0, #9da08f, #434343);
+}
+:root[data-color-theme='grey-blue'][data-theme='dark'] {
+  --color-text: #faf9f6; /* soft white for this theme */
+}
+:root[data-color-theme='grey-blue'][data-theme='light'] {
+  --color-primary: #c2b89f;
 }

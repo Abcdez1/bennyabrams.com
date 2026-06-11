@@ -1,6 +1,6 @@
 .work-links {
   --work-link-base: var(--spot-color, var(--color-primary));
-  --work-link-text: var(--color-light);
+  --work-link-text: var(--color-text);
   --work-link-border: color-mix(in oklab, var(--work-link-base) 70%, var(--work-link-text));
   --work-link-active-bg: color-mix(in oklab, var(--work-link-base) 55%, var(--work-link-text));
   --work-link-gradient: linear-gradient(
@@ -39,6 +39,9 @@
     background-color var(--transition-duration) var(--transition-timing),
     border-color var(--transition-duration) var(--transition-timing),
     color var(--transition-duration) var(--transition-timing);
+}
+.work-link.light-text {
+  color: var(--color-light);
 }
 
 .work-link::before {
