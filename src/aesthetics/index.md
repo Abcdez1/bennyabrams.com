@@ -76,3 +76,7 @@ permalink: /aesthetics/
     "containerClass": "flow"
   } %}
 </div>
+
+<p><a href="https://opera.media.mit.edu/mas825j/fall11/d/cooper-I.D.-sept-oct-1994.pdf">Muriel Cooper</a><a href="#no-relation" style="text-decoration: none;">*</a></p>
+
+<p id="no-relation"><small>* No relation to author</small></p>
