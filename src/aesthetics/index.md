@@ -84,4 +84,4 @@ permalink: /aesthetics/
   } %}
 </div>
 
-<p id="no-relation"><small>* <a href="https://opera.media.mit.edu/mas825j/fall11/d/cooper-I.D.-sept-oct-1994.pdf">Muriel Cooper</a> (no relation to the author)</small></p>
+<p id="no-relation"><small>* <a href="https://opera.media.mit.edu/mas825j/fall11/d/cooper-I.D.-sept-oct-1994.pdf">Muriel Cooper</a> (no relation to the author of the article)</small></p>
