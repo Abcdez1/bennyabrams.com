@@ -75,8 +75,13 @@ permalink: /aesthetics/
     "caption": "<a href='https://mohai.org/collections-and-research/search/item/1963.3119/-%23.103/?searchQuery=Century+21+Exposition+%281962+%3A+Seattle%2C+Wash.%29&amp;Hogg,_Civil_Engineers&amp;modules%5B0%5D=item&amp;modules%5B1%5D=collections&amp;modules%5B2%5D=library'>Worlds Fairs</a>",
     "containerClass": "flow"
   } %}
+
+  {% imageKeys {
+    "src": "/assets/images/aesthetics/muriel-cooper.jpg",
+    "alt": "Muriel Cooper",
+    "caption": "<a href='https://www.commarts.com/features/pioneer-muriel-cooper'>Muriel Cooper</a><a href='#no-relation' style='text-decoration: none;'>*</a>",
+    "containerClass": "flow"
+  } %}
 </div>
 
-<p><a href="https://opera.media.mit.edu/mas825j/fall11/d/cooper-I.D.-sept-oct-1994.pdf">Muriel Cooper</a><a href="#no-relation" style="text-decoration: none;">*</a></p>
-
-<p id="no-relation"><small>* No relation to author</small></p>
+<p id="no-relation"><small>* <a href="https://opera.media.mit.edu/mas825j/fall11/d/cooper-I.D.-sept-oct-1994.pdf">Muriel Cooper</a> (no relation to the author)</small></p>
